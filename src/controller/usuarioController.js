@@ -76,9 +76,9 @@ console.log(usuario)
 
 endpoint.get("/usuario/:id", async (req, resp) => {
   try {
-    let id = req.params.id;
+    let idUsuario = req.params.id;
 
-    let registros = await validarUsuarioService(id);
+    let registros = await validarUsuarioService(idUsuario);
 
     resp.send(registros);
   } catch (error) {
