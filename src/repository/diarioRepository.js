@@ -21,7 +21,7 @@ export async function alterarDiario(diario, id) {
   let comando = `
   update tb_diario
 	set dt_dia = ?, 
-		ds_conteudo = ?,
+		ds_conteudo = ?
 	where id_diario = ?
   `;
 
