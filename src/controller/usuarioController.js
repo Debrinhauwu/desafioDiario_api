@@ -56,7 +56,7 @@ try {
 console.log(usuario)
   if(usuario == null){
     resp.send({
-      erro: 'usuario ou senha incorretos'
+      erro: 'Usuario ou senha incorretos'
   })
 } else {
   let token = gerarToken(usuario);
